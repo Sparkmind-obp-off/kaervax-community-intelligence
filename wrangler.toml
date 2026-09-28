@@ -1,0 +1,12 @@
+name = "kaervax-community-intelligence"
+main = "src/index.ts"
+compatibility_date = "2026-09-28"
+
+[vars]
+APP_NAME = "Kaervax Community Intelligence"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "kaervax-community-intelligence"
+database_id = "REPLACE_WITH_D1_DATABASE_ID"
+migrations_dir = "migrations"
