@@ -1,0 +1,16 @@
+# secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# local/runtime
+node_modules/
+dist/
+.wrangler/
+.dev.vars
+
+# OS
+.DS_Store
+Thumbs.db
