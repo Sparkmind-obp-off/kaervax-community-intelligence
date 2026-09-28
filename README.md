@@ -45,3 +45,16 @@ Cloudflare-first, adapter-based, API-optional:
 UI → API/Workers → ingestion adapters → normalized events → intelligence pipeline → D1 opportunity store → action queue.
 
 See docs/ for the product, architecture, data model, security, roadmap, testing, observability and API strategy.
+
+## Phase 1 — Community Radar
+
+The repository now contains an executable Cloudflare Worker + D1 implementation of the first operating surface.
+
+- `GET /` — operator radar UI
+- `GET /health` — health check
+- `GET /api/communities` — registry/search/filter
+- `POST /api/communities` — create a community and manual source
+- D1 migration under `migrations/`
+- Phase 1 deployment/UI/definition-of-done docs under `docs/17-20`
+
+Phase 1 is intentionally manual-first. Platform connectors and live conversation ingestion are Phase 2 and must use only authorized platform capabilities.
